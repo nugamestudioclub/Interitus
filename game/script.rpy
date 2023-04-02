@@ -8,6 +8,10 @@ transform midright:
     xcenter 2/3
     yalign 0.0
 
+transform midcenter:
+    xcenter 1/2
+    yalign 0.0
+
 transform fade_in:
     alpha 0.00
     ease 1.0 alpha 1.00
