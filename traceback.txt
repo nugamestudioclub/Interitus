@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapel.rpy", line 184, in script
-    show aaron scared
-Exception: Image 'aaron' does not accept attributes 'scared'.
+  File "game/graveyard.rpy", line 142, in script
+    show aaron angry at midright
+Exception: Image 'aaron' does not accept attributes 'angry'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapel.rpy", line 184, in script
-    show aaron scared
+  File "game/graveyard.rpy", line 142, in script
+    show aaron angry at midright
   File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/ast.py", line 1408, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/ast.py", line 1371, in show_imspec
@@ -22,9 +22,9 @@ Full traceback:
     args.extraneous()
   File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/display/core.py", line 265, in extraneous
     raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'aaron' does not accept attributes 'scared'.
+Exception: Image 'aaron' does not accept attributes 'angry'.
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.0.3.22090809
 soj2023 1.0
-Sun Apr  2 19:20:11 2023
+Sun Apr  2 19:32:05 2023
