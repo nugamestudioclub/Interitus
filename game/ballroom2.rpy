@@ -62,7 +62,7 @@ label ballroom2_choice1_1:
     $ relationship_aaron -= 2
     $ relationship_katharine -= 1
 
-    jump ballroom1_choice1_end
+    jump ballroom2_choice1_end
     
 
 label ballroom2_choice1_2:
