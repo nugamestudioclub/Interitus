@@ -7,7 +7,7 @@ label begin:
     radio "Here in *static* there's a slight chance of rain this evening..."
     radio "*static* ...and for the low price of *static* you can buy this anti-aging cream! That's right, you... *static*"
 
-    show evelyn normal at center, fade_in
+    show evelyn neutral at center, fade_in
 
     e "Goddamn rental car radio..."
 
@@ -20,13 +20,13 @@ label begin:
     "A remote castle awaits her."
 
     scene bg castle entrance
-    show evelyn normal
+    show evelyn neutral
 
     "The massive door to the stone castle feels extra tall with the sunset turning the shadows sharp."
     "Evelyn is not intimidated."
 
     
-    show evelyn normal:
+    show evelyn neutral:
         ease 1.0 midleft
     show alastor smug at midright, fade_in
     pause 1.0
@@ -86,7 +86,7 @@ label begin_choiceEnd:
 
     scene bg parlor
 
-    show evelyn normal at midleft
+    show evelyn neutral at midleft
     show alastor smug at midright
 
     "The dusty parlor looks like it hasn't been properly used in years, despite its well-maintained look."
@@ -102,7 +102,7 @@ label begin_choiceEnd:
 
     e "I'm actually in quite a rush, so please, stop bullshitting me. Is Kat here or not?"
 
-    show alastor normal
+    show alastor neutral
 
     l "No."
     l "Not here, anyway."
@@ -137,4 +137,4 @@ label begin_choiceEnd:
     "She thought that perhaps she would be feeling some sort of guilt as of now, but her mind had already moved on from the blood seeping onto the carpet."
     "She was now focused on the locked door in front of her, and what lies beyond it."
 
-    jump ballroom_start
+    jump ballroom1_start

@@ -19,7 +19,7 @@ transform fade_out:
 # name of the character.
 
 define e = Character("Evelyn")
-define k = Character("Katarina")
+define k = Character("Katherine")
 define a = Character("Aaron")
 define l = Character("Lord Alastor")
 define radio = Character("Car Radio")
@@ -43,11 +43,11 @@ init python:
 label start:
 
     $ corrupt_evelyn = 0
-    $ corrupt_katarina = 0
+    $ corrupt_katharine = 0
     $ corrupt_aaron = 0
     $ corrupt_alastor = 0
 
-    $ relationship_katarina = 0
+    $ relationship_katharine = 0
     $ relationship_aaron = 0
 
     jump begin

@@ -4,17 +4,17 @@ label chapel_start:
 
     scene chapel
 
-    show evelyn normal at center
+    show evelyn neutral at center
 
     "Through the door, there is a small courtyard, and beyond it, a chapel with a graveyard built around the back."
     "Evelyn tries to run alongside the outside of the castle, only to find herself physically unable to walk past a certain point."
     "Something here was wrong. This castle felt…alive, almost."
     "Evelyn decides to approach the small chapel, hoping to find anything to lead her to Kat."
 
-    show evelyn normal:
+    show evelyn neutral:
         ease 1.0 midleft
 
-    show aaron enraged at midrigth, fade_in
+    show aaron enraged at midright, fade_in
 
     a "Not today, fucker!"
 
@@ -46,7 +46,7 @@ label chapel_start:
 
     "The man raises his axe again, prepared to kill again."
 
-    show evelyn angry
+    show evelyn angry at midleft, fade_in
 
     e "Get that thing away from me! What the hell are you doing?!"
 
@@ -70,7 +70,7 @@ label chapel_choice1_1:
 
     a "A friend? Here?"
 
-    show arron normal
+    show aaron neutral
 
     e "As far as I know, yes. This is the last place I–"
 
@@ -102,14 +102,14 @@ label chapel_choice_2_1:
 
     e "Good. Take me to her then."
 
-    show arron angry
+    show aaron angry
 
     a "No way! You're like some crazy zombie or something, you came back from the dead!"
     a "You're getting the axe again."
 
     e "Do whatever you like. Not like the axe worked last time anyway."
 
-    show arron normal
+    show aaron neutral
 
     a "...shit, lady. You're kind of nuts."
 
@@ -149,7 +149,7 @@ label chapel_choice1_2:
 
     e "And if you don't calm down right now, I'll blast a hole in your head, and we'll try this again after you've had a taste of death too."
 
-    show arron scared
+    show aaron scared
 
     a "..."
 
@@ -159,7 +159,7 @@ label chapel_choice1_2:
 
     e "How do you know? Have you died before?"
 
-    show arron neutral
+    show aaron neutral
 
     a "Not recently, no. And I don't intend on trying it anytime soon."
 
@@ -181,7 +181,7 @@ label chapel_choice1_2:
 
 label chapel_choice3_1:
 
-    show arron scared
+    show aaron scared
 
     a "Fine. Yeah, sure. There was a woman, Kat, I found her earlier."
 
@@ -212,5 +212,6 @@ label chapel_choice3_2:
     jump chapel_choice1_end
 
 label chapel_choice1_end:
+    jump graveyard_start
 
 
