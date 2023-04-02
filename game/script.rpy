@@ -62,7 +62,7 @@ init python:
             renpy.music.play("sounds/music/Distortion Lvl1/" + keyName + ".ogg", channel, loop=True)
             
         elif (corrupt_evelyn >= 2):
-            renpy.music.play("sounds/music/Distortion level 2" + keyName + ".ogg", channel, loop=True)
+            renpy.music.play("sounds/music/Distortion level 2/" + keyName + ".ogg", channel, loop=True)
 
 
 # The game starts here.
