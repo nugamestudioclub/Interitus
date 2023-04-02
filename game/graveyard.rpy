@@ -4,14 +4,14 @@ label graveyard_start:
 
     scene bg graveyard
 
-    show evelyn neutral at center, fade_in
+    show evelyn neutral at midcenter, fade_in
 
     "The graveyard seems to be oddly peaceful in comparison to the horrors inside the house."
     "Evelyn could imagine why Kat chose this place as her hideout."
     "The dead seem to stay dead here."
 
     show katherine shocked at midright, fade_in:
-    show evelyn happy at solid:
+    show evelyn neutral:
         ease 1.0 midleft
     
     k "Evelyn...?"

@@ -5,13 +5,12 @@ label ballroom1_start:
 
     scene bg ballroom
 
-    show evelyn neutral at center, fade_in
+    show evelyn neutral at midcenter, fade_in
 
     "A grand ballroom in front of Evelyn, she gets the distinct feeling that she isn't alone."
 
     show creature at midright, fade_in
-    show evelyn scared at solid:
-        ease 1.0 midleft 
+    show evelyn scared at midleft
     
     pause 1.0
 
@@ -90,7 +89,8 @@ label ballroom1_choice1_sneak:
 
 label ballroom1_choice1_dead:
 
-    show evelyn neutral at fade_out
+    #show evelyn neutral at fade_out
+    hide evelyn
     show creature at fade_out
     pause 1.0
 
@@ -100,6 +100,9 @@ label ballroom1_choice1_dead:
     "After a while, Evelyn's crumpled body begins to rise, {i}almost{/i} the same as it was before the creature decided to attack."
 
     $ corrupt_evelyn += 1
+
+    show evelyn neutral at midcenter, fade_in
+        
 
     e "Holy shit."
 

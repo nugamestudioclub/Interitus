@@ -4,7 +4,7 @@ label chapel_start:
 
     scene bg chapel
 
-    show evelyn neutral at center
+    show evelyn neutral at midcenter
 
     "Through the door, there is a small courtyard, and beyond it, a chapel with a graveyard built around the back."
     "Evelyn tries to run alongside the outside of the castle, only to find herself physically unable to walk past a certain point."

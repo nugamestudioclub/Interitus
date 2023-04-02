@@ -23,7 +23,8 @@ transform solid:
     alpha 1.00
 
 transform fade_out:
-    easein 1.0 alpha 0.00
+    alpha 1.00
+    ease 1.0 alpha 0.00
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
