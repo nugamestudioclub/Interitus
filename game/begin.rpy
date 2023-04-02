@@ -4,6 +4,11 @@ label begin:
 
     scene bg car
 
+    $myplay("Evelyn")
+
+    play sound audio.car_rumble loop
+    play sound2 audio.radio loop
+
     radio "Here in *static* there's a slight chance of rain this evening..."
     radio "*static* ...and for the low price of *static* you can buy this anti-aging cream! That's right, you... *static*"
 
@@ -14,10 +19,15 @@ label begin:
     radio "{i}Don't go chasing waterfalls, stick to the...{/i} *click*"
 
     e "That's enough of you."
+
+    stop sound2
+
     e "Kat, I swear, if you're making me come all the way out here for nothing..."
 
     "Evelyn has finally arrived at the last known location of Katherine McKellan."
     "A remote castle awaits her."
+
+    stop sound
 
     scene bg castle front
     show evelyn neutral
@@ -86,6 +96,7 @@ label begin_choiceEnd:
 
     scene parlor
 
+
     show evelyn neutral at midleft
     show alastor smug at midright
 
@@ -102,11 +113,16 @@ label begin_choiceEnd:
 
     e "I'm actually in quite a rush, so please, stop bullshitting me. Is Kat here or not?"
 
+    stop music fadeout 1.0
+
     show alastor neutral
 
     l "No."
     l "Not here, anyway."
     l "I'm sure you'll find her eventually, though. We do have an eternity to spend together."
+
+    $myplay("Tense Music")
+
     l "Perhaps you'll find her with her face melted off, features dripping down her torso as they pool into a putrid mass, organs bursting out of flayed skin, her–"
 
     show handgun
@@ -121,6 +137,7 @@ label begin_choiceEnd:
     l "Oh dear, lost your composure, have you? Does it pain you to think about her suffering, to hear her calling desperately for help, and being able to do {i}nothing{/i}–"
 
     play sound gunshot
+    stop music
 
     hide alastor
 

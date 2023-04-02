@@ -21,6 +21,7 @@ label chapel_start:
     show axe
 
     play sound bone_break
+    play sound2 axe_kill
 
     pause 1.5
 
@@ -37,6 +38,8 @@ label chapel_start:
     $ corrupt_evelyn += 1
 
     if corrupt_evelyn > 0:
+
+        $myplay("Neutral Music")
 
         e "Holy shit."
 
