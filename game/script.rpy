@@ -55,14 +55,6 @@ image evelyn none = ConditionSwitch(
 
 )   
 
-init python:
-    renpy.music.register_channel(name="sound2", mixer="sfx", loop=False)
-
-    def myplay(keyName, channel=None, **kwargs):
-        # TODO add corruption cases
-        if (keyName == ""):
-            return
-
 
 # The game starts here.
 
