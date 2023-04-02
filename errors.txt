@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/chapel.rpy", line 176: choice menuitem expects a non-empty block.
+    "Did you forget who has the gun pointed at who here? Talk.":
+                                                                ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sun Apr  2 01:41:22 2023
