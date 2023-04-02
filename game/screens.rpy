@@ -555,6 +555,20 @@ screen about():
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
 
+            ## TODO insert credits here
+            label "Music / Sound Design"
+            text "Skylar Hale\nRaymond Tsai\n"
+
+            label "Art"
+            text "Josh Ramirez\nJune T.\nKevin\nKalan\nGabriel Joy Reid\n"
+
+            label "Programming"
+            text "Joshua Sun\nChristian Fitzpatrick\n"
+
+            label "Narrative"
+            text _("Christain Fitzpatrick\nEmma Millin\nNole\n")
+
+
             ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
