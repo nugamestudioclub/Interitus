@@ -2,7 +2,7 @@
 # file, define a label and jump to it from another file.
 label parlor_start:
 
-    scene bg parlor
+    scene parlor
 
     "The three of them quickly leave the ballroom and enter the solar. Kat and Aaron hurriedly rush toward the entrance hall door, but a large, unaccompanied blood stain on the carpet stops Evelyn dead in her tracks."
 

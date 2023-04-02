@@ -84,7 +84,7 @@ label begin_choice3:
 
 label begin_choiceEnd:
 
-    scene bg parlor
+    scene parlor
 
     show evelyn neutral at midleft
     show alastor smug at midright

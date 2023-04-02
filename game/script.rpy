@@ -39,6 +39,7 @@ define audio.skull_hit_concrete = "sfx/skull-hit-concrete.ogg"
 
 image bg car = "images/backgrounds/car.png"
 image bg castle front = "images/backgrounds/castle_front.png"
+image bg chapel = "images/backgrounds/chapel.png"
 
 image evelyn none = ConditionSwitch(
     # TODO add corruption cases
