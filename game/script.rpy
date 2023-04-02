@@ -1,16 +1,19 @@
 ﻿# The script of the game goes in this file.
 
 transform midleft:
-    xcenter 1/3
-    yalign 0.0
+    xcenter 5/16
+    yalign -0.25
+    zoom 0.4
 
 transform midright:
-    xcenter 2/3
-    yalign 0.0
+    xcenter 11/16
+    yalign -0.25
+    zoom 0.4
 
 transform midcenter:
     xcenter 1/2
-    yalign 0.0
+    yalign -0.25
+    zoom 0.4
 
 transform fade_in:
     alpha 0.00
