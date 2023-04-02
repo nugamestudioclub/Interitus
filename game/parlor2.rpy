@@ -89,7 +89,7 @@ label parlor2_aaron_alive_choice1_1:
         e "Yeah. I don't know why… Maybe that wasn't even the real Kat…"
         e "My car is still here. Let's get out of here."
 
-        "[[End]]"
+        jump end
         
         return
     
@@ -98,7 +98,7 @@ label parlor2_aaron_alive_choice1_1:
         "Aaron is able to step through the door, but Evelyn is unable."
         "She is too far gone. The castle has claimed her."
 
-        "[[Fate Sealed]]"
+        jump fate_sealed
 
         return
 
@@ -123,7 +123,7 @@ label parlor2_aaron_alive_choice1_2:
     k "I'm sorry, Evelyn."
     k "Which is more than you'll ever be."
 
-    "[[Fate Sealed]]"
+    jump fate_sealed
 
     return
 
@@ -148,7 +148,7 @@ label parlor2_aaron_alive_choice1_3:
 
     "Alastor tears into Evelyn. She wakes up next to a starved entity."
 
-    "[[Fate Sealed]]"
+    jump fate_sealed
 
     return
 
@@ -161,7 +161,7 @@ label parlor2_aaron_alive_choice1_4:
 
     "Alastor tears into Evelyn. She wakes up next to a starved entity."
 
-    "[[Fate Sealed]]"
+    jump fate_sealed
 
     return
 
@@ -203,7 +203,7 @@ label parlor2_aaron_alive_choice1_5:
 
     show evelyn smile
 
-    "[[End]]"
+    jump end
 
     return
 
@@ -267,7 +267,7 @@ label parlor2_aaron_dead_choice1_1:
 
         "Evelyn approaches the door, the force just weak enough for her to slip through."
         "She stumbles through the door frame, her newfound freedom compelling her forward."
-        "[[End]]"
+        jump end
         
         return
     
@@ -276,7 +276,7 @@ label parlor2_aaron_dead_choice1_1:
         "Evelyn is unable to step through the door."
         "She is too far gone. The castle has claimed her."
 
-        "[[Fate Sealed]]"
+        jump fate_sealed
 
         return
 
@@ -289,7 +289,7 @@ label parlor2_aaron_dead_choice1_2:
 
     "Alastor tears into Evelyn. She wakes up next to a starved entity."
 
-    "[[Fate Sealed]]"
+    jump fate_sealed
 
 label parlor2_aaron_dead_choice1_3:
 
@@ -328,7 +328,7 @@ label parlor2_aaron_dead_choice1_3:
 
     show evelyn smile
 
-    "[[End]]"
+    jump end
 
     return
 
