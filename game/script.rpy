@@ -37,6 +37,9 @@ define audio.monster_1 = "sfx/monster-1-sound-effect.ogg"
 define audio.monster_2 = "sfx/monster-2-sound-effect.ogg"
 define audio.skull_hit_concrete = "sfx/skull-hit-concrete.ogg"
 
+image bg car = "images/backgrounds/car.png"
+image bg castle front = "images/backgrounds/castle_front.png"
+
 image evelyn none = ConditionSwitch(
     # TODO add corruption cases
     "corrupt_evelyn == 0", "evelyn_image"

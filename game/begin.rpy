@@ -19,7 +19,7 @@ label begin:
     "Evelyn has finally arrived at the last known location of Katherine McKellan."
     "A remote castle awaits her."
 
-    scene bg castle entrance
+    scene bg castle front
     show evelyn neutral
 
     "The massive door to the stone castle feels extra tall with the sunset turning the shadows sharp."
@@ -35,13 +35,13 @@ label begin:
 
     menu:
 
-        "Yeah, let's cut whatever pleasantries you have planned here.":
+        "\"Yeah, let's cut whatever pleasantries you have planned here.\"":
             jump begin_choice1
 
-        "It was fine.":
+        "\"It was fine.\"":
             jump begin_choice2
 
-        "You were expecting me?":
+        "\"You were expecting me?\"":
             jump begin_choice3
         
 label begin_choice1:

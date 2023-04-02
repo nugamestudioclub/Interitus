@@ -173,10 +173,10 @@ label chapel_choice1_2:
 
     menu:
         
-        "Did you forget who has the gun pointed at who here? Talk.":
+        "\"Did you forget who has the gun pointed at who here? Talk.\"":
             jump chapel_choice3_1
 
-        "Please, if you've seen her... I need to know. It's important.":
+        "\"Please, if you've seen her... I need to know. It's important.\"":
             jump chapel_choice3_2
 
 label chapel_choice3_1:

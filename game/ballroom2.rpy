@@ -12,10 +12,10 @@ label ballroom2_start:
 
     menu:
          
-        "We make a run for it. Aaron first.":
+        "\"We make a run for it. Aaron first.\"":
             jump ballroom2_choice1_1
 
-        "It gets distracted by prey.":
+        "\"It gets distracted by prey.\"":
             jump ballroom2_choice1_2
 
 label ballroom2_choice1_1:
@@ -79,13 +79,13 @@ label ballroom2_choice1_2:
 
     menu:
 
-        "I can be the prey.":
+        "\"I can be the prey.\"":
             jump ballroom2_choice2_eve
 
-        "Aaron?":
+        "\"Aaron?\"":
             jump ballroom2_choice2_aaron
 
-        "Kat?":
+        "\"Kat?\"":
             jump ballroom2_choice2_kat
 
 label ballroom2_choice2_eve:

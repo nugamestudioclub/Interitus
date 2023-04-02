@@ -24,13 +24,13 @@ label graveyard_start:
 
     menu:
 
-        "I want to apologize. For before.":
+        "\"I want to apologize. For before.\"":
             jump graveyard_choice1_1
 
-        "Let's get out of here.":
+        "\"Let's get out of here.\"":
             jump graveyard_choice1_2
 
-        "What the hell has happened to you since '06?":
+        "\"What the hell has happened to you since '06?\"":
             jump graveyard_choice1_3
 
 label graveyard_choice1_1:
