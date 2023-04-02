@@ -2,7 +2,7 @@
 # file, define a label and jump to it from another file.
 label ballroom2_start:
 
-    scene ballroom
+    scene bg ballroom
 
     show evelyn neutral at midleft, fade_in
     show katherine neutral at center, fade_in

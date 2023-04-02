@@ -2,7 +2,7 @@
 # file, define a label and jump to it from another file.
 label graveyard_start:
 
-    scene graveyard
+    scene bg graveyard
 
     show evelyn neutral at center, fade_in
 

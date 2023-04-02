@@ -3,7 +3,7 @@
 
 label ballroom1_start:
 
-    scene ballroom
+    scene bg ballroom
 
     show evelyn neutral at center, fade_in
 

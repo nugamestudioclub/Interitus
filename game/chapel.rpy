@@ -2,7 +2,7 @@
 # file, define a label and jump to it from another file.
 label chapel_start:
 
-    scene chapel
+    scene bg chapel
 
     show evelyn neutral at center
 
