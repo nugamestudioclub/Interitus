@@ -120,7 +120,7 @@ label dungeon_kat_betray:
     "Evelyn's body is dragged into the cell, the trapped entity gleefully devouring his meal."
     "In between mouthfuls of flesh, the entity reveals all."
 
-    jump fate_sealed
+    jump bad_end
 
     return
 

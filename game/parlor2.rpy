@@ -89,7 +89,7 @@ label parlor2_aaron_alive_choice1_1:
         e "Yeah. I don't know why… Maybe that wasn't even the real Kat…"
         e "My car is still here. Let's get out of here."
 
-        jump end
+        jump neutral_end
         
         return
     
@@ -98,7 +98,7 @@ label parlor2_aaron_alive_choice1_1:
         "Aaron is able to step through the door, but Evelyn is unable."
         "She is too far gone. The castle has claimed her."
 
-        jump fate_sealed
+        jump bad_end
 
         return
 
@@ -123,7 +123,7 @@ label parlor2_aaron_alive_choice1_2:
     k "I'm sorry, Evelyn."
     k "Which is more than you'll ever be."
 
-    jump fate_sealed
+    jump bad_end
 
     return
 
@@ -148,7 +148,7 @@ label parlor2_aaron_alive_choice1_3:
 
     "Alastor tears into Evelyn. She wakes up next to a starved entity."
 
-    jump fate_sealed
+    jump bad_end
 
     return
 
@@ -161,7 +161,7 @@ label parlor2_aaron_alive_choice1_4:
 
     "Alastor tears into Evelyn. She wakes up next to a starved entity."
 
-    jump fate_sealed
+    jump bad_end
 
     return
 
@@ -203,7 +203,7 @@ label parlor2_aaron_alive_choice1_5:
 
     show evelyn smile
 
-    jump end
+    jump good_end
 
     return
 
@@ -276,7 +276,7 @@ label parlor2_aaron_dead_choice1_1:
         "Evelyn is unable to step through the door."
         "She is too far gone. The castle has claimed her."
 
-        jump fate_sealed
+        jump bad_end
 
         return
 
@@ -289,7 +289,7 @@ label parlor2_aaron_dead_choice1_2:
 
     "Alastor tears into Evelyn. She wakes up next to a starved entity."
 
-    jump fate_sealed
+    jump bad_end
 
 label parlor2_aaron_dead_choice1_3:
 
@@ -328,7 +328,7 @@ label parlor2_aaron_dead_choice1_3:
 
     show evelyn smile
 
-    jump end
+    jump good_end
 
     return
 
