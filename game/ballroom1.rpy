@@ -10,8 +10,8 @@ label ballroom1_start:
     "A grand ballroom in front of Evelyn, she gets the distinct feeling that she isn't alone."
 
     show creature at midright, fade_in
-    show evelyn scared:
-        ease 1.0 midleft
+    show evelyn scared at solid:
+        ease 1.0 midleft 
     
     pause 1.0
 

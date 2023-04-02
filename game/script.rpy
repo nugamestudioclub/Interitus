@@ -10,7 +10,10 @@ transform midright:
 
 transform fade_in:
     alpha 0.00
-    easein 1.0 alpha 1.00
+    ease 1.0 alpha 1.00
+
+transform solid:
+    alpha 1.00
 
 transform fade_out:
     easein 1.0 alpha 0.00
@@ -24,18 +27,29 @@ define a = Character("Aaron")
 define l = Character("Lord Alastor")
 define radio = Character("Car Radio")
 
-define audio.axe_kill = "sfx/axe kill.ogg"
-define audio.bone_break = "sfx/bone break.ogg"
-define audio.car_rumble = "sfx/car rumble.ogg"
-define audio.flesh_tear = "sfx/flesh tear.ogg"
+define audio.axe_kill = "sfx/axe-kill.ogg"
+define audio.bone_break = "sfx/bone-break.ogg"
+define audio.car_rumble = "sfx/car-rumble.ogg"
+define audio.flesh_tear = "sfx/flesh-tear.ogg"
 define audio.footsteps = "sfx/footsteps.ogg"
 define audio.gunshot = "sfx/gunshot.ogg"
-define audio.monster_1 = "sfx/monster 1 sound effect.ogg"
-define audio.monster_2 = "sfx/monster 2 sound effect.ogg"
-define audio.skull_hit_concrete = "sfx/skull hit concrete.ogg"
+define audio.monster_1 = "sfx/monster-1-sound-effect.ogg"
+define audio.monster_2 = "sfx/monster-2-sound-effect.ogg"
+define audio.skull_hit_concrete = "sfx/skull-hit-concrete.ogg"
+
+image evelyn none = ConditionSwitch(
+    # TODO add corruption cases
+    "corrupt_evelyn == 0", "evelyn_image"
+
+)   
 
 init python:
     renpy.music.register_channel(name="sound2", mixer="sfx", loop=False)
+
+    def myplay(keyName, channel=None, **kwargs):
+        # TODO add corruption cases
+        if (keyName == ""):
+            return
 
 
 # The game starts here.

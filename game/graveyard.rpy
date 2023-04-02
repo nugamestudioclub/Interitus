@@ -11,7 +11,7 @@ label graveyard_start:
     "The dead seem to stay dead here."
 
     show katherine shocked at midright, fade_in:
-    show evelyn happy:
+    show evelyn happy at solid:
         ease 1.0 midleft
     
     k "Evelyn...?"
@@ -55,6 +55,13 @@ label graveyard_choice1_1:
 
     k "That's a long story for a different day. Let's get out of here first."
 
+    show evelyn neutral
+    show katherine neutral
+
+    e "Alright, let's move."
+
+    $ relationship_katharine += 2
+
     jump graveyard_choice1_end
 
 label graveyard_choice1_2:
@@ -76,6 +83,8 @@ label graveyard_choice1_2:
     k "And by that I mean find a way to leave this place."
 
     e "Great plan."
+
+    $ relationship_katharine += 1
 
     jump graveyard_choice1_end
 
@@ -107,6 +116,8 @@ label graveyard_choice1_3:
     e "Let's leave this shithole."
 
     k "Fine."
+
+    $ relationship_katharine -= 2
 
     jump graveyard_choice1_end
 

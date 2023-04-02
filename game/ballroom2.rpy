@@ -59,6 +59,9 @@ label ballroom2_choice1_1:
 
     k "We have the key. Let's just go."
 
+    $ relationship_aaron -= 2
+    $ relationship_katharine -= 1
+
     jump ballroom1_choice1_end
     
 
@@ -121,6 +124,9 @@ label ballroom2_choice2_eve:
 
     e "Then let's go."
 
+    $ relationship_aaron += 1
+    $ relationship_katharine += 1
+
     jump ballroom2_choice1_end
 
 label ballroom2_choice2_aaron:
@@ -163,6 +169,8 @@ label ballroom2_choice2_aaron:
     a "No."
 
     k "This way, quickly."
+
+    $ relationship_aaron -= 1
 
     jump ballroom2_choice1_end
 
@@ -208,6 +216,8 @@ label ballroom2_choice2_kat:
     e "Are you alright?"
 
     k "Not really. Let's move on."
+
+    $ relationship_aaron -= 1
 
     jump ballroom2_choice1_end
 
