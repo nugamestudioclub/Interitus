@@ -1,6 +1,6 @@
 ﻿# Ren'Py automatically loads all script files ending with .rpy. To use this
 # file, define a label and jump to it from another file.
-label parlor_start:
+label parlor1_start:
 
     scene parlor
 
@@ -109,12 +109,12 @@ label parlor_start:
 
     menu: 
         "Yeah, and you'll be no different.":
-            jump parlor_choice1_1
+            jump parlor1_choice1_1
 
         "Who the hell are you?":
-            jump parlor_choice1_2
+            jump parlor1_choice1_2
 
-label parlor_choice1_1:
+label parlor1_choice1_1:
 
     "Evelyn pulls out her gun and pulls the trigger."
     "Lord Alastor crumples to the ground, again."
@@ -128,9 +128,11 @@ label parlor_choice1_1:
 
     $ relationship_aaron += 1
 
-    jump parlor_choice1_end
+    $ corrupt_alastor += 1
 
-label parlor_choice1_2:
+    jump parlor1_choice1_end
+
+label parlor1_choice1_2:
 
     "Alastor smiles to himself."
 
@@ -148,31 +150,31 @@ label parlor_choice1_2:
     menu:
 
         "\"Put the gun down, Aaron. Let me hear what he has to say for himself.\"":
-            jump parlor_choice2_1
+            jump parlor1_choice2_1
 
         "Disarm him.":
-            jump parlor_choice2_2
+            jump parlor1_choice2_2
 
-label parlor_choice2_1:
+label parlor1_choice2_1:
 
     a "Fine."
 
-    $ parlor_choice2_val = 0
+    $ parlor1_choice2_val = 0
 
-    jump parlor_choice2_end
+    jump parlor1_choice2_end
 
-label parlor_choice2_2:
+label parlor1_choice2_2:
 
     a "What the fuck are you doing?!"
 
-    $ parlor_choice2_val = 1
+    $ parlor1_choice2_val = 1
     $ relationship_aaron -= 2
 
     e "Talk. Now."
 
-    jump parlor_choice2_end
+    jump parlor1_choice2_end
 
-label parlor_choice2_end:
+label parlor1_choice2_end:
 
     l "Aw, you're defending me, Evelyn, how sweet."
     l "I learned a lot about you from Katherine."
@@ -183,7 +185,7 @@ label parlor_choice2_end:
     l "Wandering souls tend to find their way here."
     l "And when they're here, they do tend to dwell on the past."
 
-    if parlor_choice2_val == 0:
+    if parlor1_choice2_val == 0:
 
         e "Okay... So why is Aaron here?"
 
@@ -195,7 +197,7 @@ label parlor_choice2_end:
 
         l "You've used your three questions already, dears."
     
-    if parlor_choice2_val == 1:
+    if parlor1_choice2_val == 1:
 
         e "Why can't we leave?"
 
@@ -217,7 +219,7 @@ label parlor_choice2_end:
 
     e "Grab Kat, let's go"
 
-    jump parlor_choice1_end
+    jump parlor1_choice1_end
 
-label parlor_choice1_end:
+label parlor1_choice1_end:
     jump kitchen_start

@@ -222,4 +222,4 @@ label ballroom2_choice2_kat:
     jump ballroom2_choice1_end
 
 label ballroom2_choice1_end:
-    jump parlor_start
+    jump parlor1_start

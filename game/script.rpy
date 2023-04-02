@@ -26,6 +26,7 @@ define k = Character("Katherine")
 define a = Character("Aaron")
 define l = Character("Lord Alastor")
 define radio = Character("Car Radio")
+define t = Character("Trapped Entity") 
 
 define audio.axe_kill = "sfx/axe-kill.ogg"
 define audio.bone_break = "sfx/bone-break.ogg"
@@ -44,13 +45,12 @@ image bg chapel = "images/backgrounds/chapel.png"
 image evelyn none = ConditionSwitch(
     # TODO add corruption cases
     "corrupt_evelyn == 0", "evelyn_image"
-
 )   
 
 init python:
     renpy.music.register_channel(name="sound2", mixer="sfx", loop=False)
 
-    def myplay(keyName, channel=Music, **kwargs):
+    def myplay(keyName, channel="Music", **kwargs):
         # TODO add corruption cases
         if (corrupt_evelyn == 0):
             renpy.play("sounds/music/No Distortion/" + keyName + ".ogg", channel, **kwargs)
