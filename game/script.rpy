@@ -50,10 +50,16 @@ image evelyn none = ConditionSwitch(
 init python:
     renpy.music.register_channel(name="sound2", mixer="sfx", loop=False)
 
-    def myplay(keyName, channel=None, **kwargs):
+    def myplay(keyName, channel=Music, **kwargs):
         # TODO add corruption cases
-        if (keyName == ""):
-            return
+        if (corrupt_evelyn == 0):
+            renpy.play("sounds/music/No Distortion/" + keyName + ".ogg", channel, **kwargs)
+        
+        elif (corrupt_evelyn == 1):
+            renpy.play("sounds/music/Distortion Lvl1/" + keyWord + ".ogg", channel, **kwargs)
+            
+        elif (corrupt_evelyn >= 2):
+            renpy.play("sounds/music/Distortion level 2" + keyWord + ".ogg", channel, **kwargs)
 
 
 # The game starts here.
@@ -67,6 +73,8 @@ label start:
 
     $ relationship_katharine = 0
     $ relationship_aaron = 0
+
+    $ aaron_alive = True
 
     jump begin
     # jump ballroom_start
