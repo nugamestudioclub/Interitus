@@ -12,7 +12,7 @@ label begin:
     radio "Here in *static* there's a slight chance of rain this evening..."
     radio "*static* ...and for the low price of *static* you can buy this anti-aging cream! That's right, you... *static*"
 
-    show evelyn neutral at center, fade_in
+    show evelyn neutral at midcenter, fade_in
 
     e "Goddamn rental car radio..."
 
@@ -30,7 +30,7 @@ label begin:
     stop sound
 
     scene bg castle front
-    show evelyn neutral
+    show evelyn neutral at midcenter
 
     "The massive door to the stone castle feels extra tall with the sunset turning the shadows sharp."
     "Evelyn is not intimidated."

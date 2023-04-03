@@ -1,12 +1,19 @@
 ﻿# The script of the game goes in this file.
 
 transform midleft:
-    xcenter 1/3
-    yalign 0.0
+    xcenter 5/16
+    yalign -0.25
+    zoom 0.4
 
 transform midright:
-    xcenter 2/3
-    yalign 0.0
+    xcenter 11/16
+    yalign -0.25
+    zoom 0.4
+
+transform midcenter:
+    xcenter 1/2
+    yalign -0.25
+    zoom 0.4
 
 transform fade_in:
     alpha 0.00
@@ -16,7 +23,8 @@ transform solid:
     alpha 1.00
 
 transform fade_out:
-    easein 1.0 alpha 0.00
+    alpha 1.00
+    ease 1.0 alpha 0.00
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -63,7 +71,6 @@ init python:
             
         elif (corrupt_evelyn >= 2):
             renpy.music.play("sounds/music/Distortion level 2/" + keyName + ".ogg", channel, loop=True)
-
 
 # The game starts here.
 
