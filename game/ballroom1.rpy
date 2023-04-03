@@ -7,6 +7,8 @@ label ballroom1_start:
 
     show evelyn neutral at midcenter, fade_in
 
+    $myplay("Neutral Music")
+
     "A grand ballroom in front of Evelyn, she gets the distinct feeling that she isn't alone."
 
     show creature at midright, fade_in
@@ -44,24 +46,50 @@ label ballroom1_choice1_start:
     
 label ballroom1_choice1_shoot:
 
+    $myplay("Tense Music")
+
+    play sound gunshot
+
     "The bullet sinks into the creature's flesh, but not enough to stop it."
     "The creature hurls itself towards the sound of the gunshot, barely giving Evelyn enough time to shoot it again."
+
     "The creature rips into Evelyn, pinning her to the ground as it slices further and further through her torso."
     "The creature's jagged teeth tighten around Evelyn's neck, life squeezing out of her."
+
+    play sound monster_1_kill
+
+    stop music
+
     jump ballroom1_choice1_dead
 
 label ballroom1_choice1_call:
 
+    $myplay("Tense Music")
+
+    play sound monster_1
+
     "Suddenly, the creature whips its head to face Evelyn."
     "She hardly has a moment to flee before it's bounding across the room, teeth bared and saliva dripping from its hanging jaw."
     "In an instant, its maw snaps closed around her, and she crumples to the ground, lifeless."
+
+    play sound monster_1_kill
+
+    stop music
+
     jump ballroom1_choice1_dead
 
 label ballroom1_choice1_run:
 
+    $myplay("Tense Music")
+
     "Evelyn runs as fast as she can across the ballroom, her boots clicking against the elegant flooring."
     "Unfortunately, the creature is faster, following the sounds of the boots, clipping Evelyn's back."
     "Evelyn falls forward, the creature digging in, teeth and hands grasping at strands of flesh that it rips from her body."
+    
+    play sound monster_1_kill
+
+    stop music
+    
     jump ballroom1_choice1_dead
 
 label ballroom1_choice1_wait:
@@ -84,6 +112,7 @@ label ballroom1_choice1_sneak:
     "As it lay crouched against a wall with its gnarled back to her, she saw something..."
     "A small brass key, embedded into the twisted flesh around its spine."
     "She swallows, steadying herself, before stepping through the doorway and out into the courtyard."
+
     jump ballroom1_choice1_end
 
 
@@ -106,10 +135,14 @@ label ballroom1_choice1_dead:
 
     e "Holy shit."
 
+    $myplay("Neutral Music")
+
     "Evelyn feels off. Her vision is different. Her limbs feel twisted. She can't think clearly. But she {i}is{/i} still alive... right?"
     "The creature is still in the room, hunched against a wall in one corner, seemingly satiated by the fresh meal."
     "Cautiously at first, and then fleeing at full sprint, Evelyn escapes through the open ballroom door, keeping her eyes dead set on her killer all the while."
     "It doesn't even move, just keeps licking its distended hands clean of her blood, as the brass key embedded in its back glistens like an eye, watching her."
+    
+    
     jump ballroom1_choice1_end
 
 label ballroom1_choice1_end:

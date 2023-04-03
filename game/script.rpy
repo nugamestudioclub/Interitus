@@ -35,15 +35,18 @@ define a = Character("Aaron")
 define l = Character("Lord Alastor")
 define radio = Character("Car Radio")
 
-define audio.axe_kill = "sfx/axe-kill.ogg"
-define audio.bone_break = "sfx/bone-break.ogg"
-define audio.car_rumble = "sfx/car-rumble.ogg"
-define audio.flesh_tear = "sfx/flesh-tear.ogg"
-define audio.footsteps = "sfx/footsteps.ogg"
-define audio.gunshot = "sfx/gunshot.ogg"
-define audio.monster_1 = "sfx/monster-1-sound-effect.ogg"
-define audio.monster_2 = "sfx/monster-2-sound-effect.ogg"
-define audio.skull_hit_concrete = "sfx/skull-hit-concrete.ogg"
+define audio.axe_kill = "/sounds/sfx/axe-kill.ogg"
+define audio.bone_break = "/sounds/sfx/bone-break.ogg"
+define audio.car_rumble = "/sounds/sfx/car-rumble.ogg"
+define audio.flesh_tear = "/sounds/sfx/flesh-tear.ogg"
+define audio.footsteps = "/sounds/sfx/footsteps.ogg"
+define audio.gunshot = "/sounds/sfx/gunshot.ogg"
+define audio.monster_1 = "/sounds/sfx/monster 1 sound effect.ogg"
+define audio.monster_2 = "/sounds/sfx/monster 2 sound effect.ogg"
+define audio.monster_1_kill = "/sounds/sfx/monster 1 kill.ogg"
+define audio.monster_2_kill = "/sounds/sfx/monster 2 kill.ogg"
+define audio.radio = "/sounds/sfx/radio-static.ogg"
+define audio.skull_hit_concrete = "/sounds/sfx/skull-hit-concrete.ogg"
 
 image bg car = "images/backgrounds/car.png"
 image bg castle front = "images/backgrounds/castle_front.png"
@@ -55,6 +58,19 @@ image evelyn none = ConditionSwitch(
 
 )   
 
+init python:
+    renpy.music.register_channel(name="sound2", mixer="sfx", loop=False)
+
+    def myplay(keyName, channel="music"):
+        # TODO add corruption cases
+        if (corrupt_evelyn == 0):
+            renpy.music.play("sounds/music/No Distortion/" + keyName + ".ogg", channel, loop=True)
+        
+        elif (corrupt_evelyn == 1):
+            renpy.music.play("sounds/music/Distortion Lvl1/" + keyName + ".ogg", channel, loop=True)
+            
+        elif (corrupt_evelyn >= 2):
+            renpy.music.play("sounds/music/Distortion level 2/" + keyName + ".ogg", channel, loop=True)
 
 # The game starts here.
 
@@ -67,6 +83,8 @@ label start:
 
     $ relationship_katharine = 0
     $ relationship_aaron = 0
+
+    $ aaron_alive = True
 
     jump begin
     # jump ballroom_start
