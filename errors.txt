@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 57: invalid syntax
+            renpy.play("sounds/music/No Distortion/" + keyName + ".ogg", channel, **kwargs) fade_in 1.0
+                                                                                             ^
+    
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sun Apr  2 18:53:16 2023
