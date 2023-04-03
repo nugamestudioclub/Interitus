@@ -4,15 +4,16 @@ label graveyard_start:
 
     scene bg graveyard
 
-    show evelyn neutral at center, fade_in
+    show evelyn neutral at midcenter
 
     "The graveyard seems to be oddly peaceful in comparison to the horrors inside the house."
     "Evelyn could imagine why Kat chose this place as her hideout."
     "The dead seem to stay dead here."
 
-    show katherine shocked at midright, fade_in:
-    show evelyn happy at solid:
+    show evelyn neutral:
         ease 1.0 midleft
+
+    show katherine shocked at midright, fade_in:
     
     k "Evelyn...?"
 
@@ -37,15 +38,15 @@ label graveyard_choice1_1:
 
     k "Go on, then."
 
-    show evelyn grimace
+    show evelyn grimace at midleft
 
     e "Shit... Okay, I shouldn't have done... what I did. I think about it everyday."
 
-    show katherine smile
+    show katherine smile at midright
 
     k "Hmm..."
 
-    show evelyn happy
+    show evelyn happy at midleft
 
     e "I just got all emotional for a 'hmm'?"
 
@@ -55,8 +56,8 @@ label graveyard_choice1_1:
 
     k "That's a long story for a different day. Let's get out of here first."
 
-    show evelyn neutral
-    show katherine neutral
+    show evelyn neutral at midleft
+    show katherine neutral at midright
 
     e "Alright, let's move."
 
@@ -66,8 +67,8 @@ label graveyard_choice1_1:
 
 label graveyard_choice1_2:
 
-    show katherine neutral
-    show evelyn neutral
+    show katherine neutral at midright
+    show evelyn neutral at midleft
 
     k "So I can have some grand reunion with my family?"
 
@@ -92,12 +93,12 @@ label graveyard_choice1_3:
 
     k "I could ask you the same question."
 
-    show katherine neutral
-    show evelyn neutral
+    show katherine neutral at midright
+    show evelyn neutral at midleft
 
     e "I mean, you've clearly had a mid-life crisis."
 
-    show katherine angry
+    show katherine angry at midright
 
     k "Oh, sure. Like being here was my choice."
 
@@ -125,9 +126,9 @@ label graveyard_choice1_3:
 label graveyard_choice1_end:
 
     show katherine neutral:
-        ease 1.0 center
+        ease 1.0 midcenter
 
-    show arron neutral at midright, fade_in
+    show aaron neutral at midright, fade_in
 
     a "Well, if we want to get through to the other sections of the castle, we'll need the key."
     a "And that will be hard to do since–"
@@ -138,7 +139,7 @@ label graveyard_choice1_end:
 
     e "Wait? How long?"
 
-    show aaron angry
+    show aaron enraged at midright
 
     a "I don't know–"
 
@@ -147,7 +148,7 @@ label graveyard_choice1_end:
     a "And how do you know that? Kat, has she told you she {i}fucking died{/i} earlier and came back?"
     a "Just like one of those things!"
 
-    show evelyn angry
+    show evelyn angry at midleft
 
     e "And why did I die? You took an axe to my neck, asshole!"
 

@@ -1,12 +1,19 @@
 ﻿# The script of the game goes in this file.
 
 transform midleft:
-    xcenter 1/3
-    yalign 0.0
+    xcenter 5/16
+    yalign -0.25
+    zoom 0.4
 
 transform midright:
-    xcenter 2/3
-    yalign 0.0
+    xcenter 11/16
+    yalign -0.25
+    zoom 0.4
+
+transform midcenter:
+    xcenter 1/2
+    yalign -0.25
+    zoom 0.4
 
 transform fade_in:
     alpha 0.00
@@ -16,7 +23,8 @@ transform solid:
     alpha 1.00
 
 transform fade_out:
-    easein 1.0 alpha 0.00
+    alpha 1.00
+    ease 1.0 alpha 0.00
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -28,15 +36,18 @@ define l = Character("Lord Alastor")
 define radio = Character("Car Radio")
 define t = Character("Trapped Entity") 
 
-define audio.axe_kill = "sfx/axe-kill.ogg"
-define audio.bone_break = "sfx/bone-break.ogg"
-define audio.car_rumble = "sfx/car-rumble.ogg"
-define audio.flesh_tear = "sfx/flesh-tear.ogg"
-define audio.footsteps = "sfx/footsteps.ogg"
-define audio.gunshot = "sfx/gunshot.ogg"
-define audio.monster_1 = "sfx/monster-1-sound-effect.ogg"
-define audio.monster_2 = "sfx/monster-2-sound-effect.ogg"
-define audio.skull_hit_concrete = "sfx/skull-hit-concrete.ogg"
+define audio.axe_kill = "/sounds/sfx/axe-kill.ogg"
+define audio.bone_break = "/sounds/sfx/bone-break.ogg"
+define audio.car_rumble = "/sounds/sfx/car-rumble.ogg"
+define audio.flesh_tear = "/sounds/sfx/flesh-tear.ogg"
+define audio.footsteps = "/sounds/sfx/footsteps.ogg"
+define audio.gunshot = "/sounds/sfx/gunshot.ogg"
+define audio.monster_1 = "/sounds/sfx/monster 1 sound effect.ogg"
+define audio.monster_2 = "/sounds/sfx/monster 2 sound effect.ogg"
+define audio.monster_1_kill = "/sounds/sfx/monster 1 kill.ogg"
+define audio.monster_2_kill = "/sounds/sfx/monster 2 kill.ogg"
+define audio.radio = "/sounds/sfx/radio-static.ogg"
+define audio.skull_hit_concrete = "/sounds/sfx/skull-hit-concrete.ogg"
 
 image bg car = "images/backgrounds/car.png"
 image bg castle front = "images/backgrounds/castle_front.png"
@@ -50,16 +61,17 @@ image evelyn none = ConditionSwitch(
 init python:
     renpy.music.register_channel(name="sound2", mixer="sfx", loop=False)
 
-    def myplay(keyName, channel="Music", **kwargs):
+
+    def myplay(keyName, channel="music"):
         # TODO add corruption cases
         if (corrupt_evelyn == 0):
-            renpy.play("sounds/music/No Distortion/" + keyName + ".ogg", channel, **kwargs)
+            renpy.music.play("sounds/music/No Distortion/" + keyName + ".ogg", channel, loop=True)
         
         elif (corrupt_evelyn == 1):
-            renpy.play("sounds/music/Distortion Lvl1/" + keyWord + ".ogg", channel, **kwargs)
+            renpy.music.play("sounds/music/Distortion Lvl1/" + keyName + ".ogg", channel, loop=True)
             
         elif (corrupt_evelyn >= 2):
-            renpy.play("sounds/music/Distortion level 2" + keyWord + ".ogg", channel, **kwargs)
+            renpy.music.play("sounds/music/Distortion level 2/" + keyName + ".ogg", channel, loop=True)
 
 
 # The game starts here.
