@@ -29,7 +29,7 @@ label chapel_start:
 
     "Evelyn falls to the ground, blood splattering from her neck where the axe has been lodged."
 
-    show aaron scared
+    show aaron scared at midright
 
     a "Shit. Shit."
 
@@ -73,7 +73,7 @@ label chapel_choice1_1:
 
     a "A friend? Here?"
 
-    show aaron neutral
+    show aaron neutral at midright
 
     e "As far as I know, yes. This is the last place I–"
 
@@ -105,14 +105,14 @@ label chapel_choice_2_1:
 
     e "Good. Take me to her then."
 
-    show aaron angry
+    show aaron enraged at midright
 
     a "No way! You're like some crazy zombie or something, you came back from the dead!"
     a "You're getting the axe again."
 
     e "Do whatever you like. Not like the axe worked last time anyway."
 
-    show aaron neutral
+    show aaron neutral at midright
 
     a "...shit, lady. You're kind of nuts."
 
@@ -152,7 +152,7 @@ label chapel_choice1_2:
 
     e "And if you don't calm down right now, I'll blast a hole in your head, and we'll try this again after you've had a taste of death too."
 
-    show aaron scared
+    show aaron scared at midright
 
     a "..."
 
@@ -162,7 +162,7 @@ label chapel_choice1_2:
 
     e "How do you know? Have you died before?"
 
-    show aaron neutral
+    show aaron neutral at midright
 
     a "Not recently, no. And I don't intend on trying it anytime soon."
 
@@ -184,7 +184,7 @@ label chapel_choice1_2:
 
 label chapel_choice3_1:
 
-    show aaron scared
+    show aaron scared at midright
 
     a "Fine. Yeah, sure. There was a woman, Kat, I found her earlier."
 

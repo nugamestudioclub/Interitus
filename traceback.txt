@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/chapel.rpy", line 108, in script
+    show aaron angry
+Exception: Image 'aaron' does not accept attributes 'angry'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/chapel.rpy", line 108, in script
+    show aaron angry
+  File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/display/image.py", line 414, in find_target
+    self.target = target._duplicate(a)
+  File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/display/core.py", line 397, in _duplicate
+    args.extraneous()
+  File "/Users/christianfitzpatrick/Desktop/Games/renpy-8.0.3-sdk/renpy/display/core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'aaron' does not accept attributes 'angry'.
+
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.0.3.22090809
+soj2023 1.0
+Sun Apr  2 20:17:41 2023
